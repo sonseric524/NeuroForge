@@ -33,3 +33,4 @@ async def reflect(prompts: list[str]):
     avg_score = sum(reward_model.score(r) for r in reflections) / len(reflections)
     return {"responses": reflections, "average_score": round(avg_score, 2)}
 
+
